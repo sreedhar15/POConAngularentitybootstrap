@@ -1,0 +1,44 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-user">&nbsp;</span>Project Users</p>
+
+    <form name="form" ng-submit="vm.saveProjectUsers()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th style="background-color: #07889B; color:white;">User Name</th>
+                <th style="background-color: #07889B; color:white;">Project</th>
+                <th style="background-color: #07889B; color:white;">Security Role</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+            <tr ng-repeat="usr in vm.ProjectUsers">
+                <td>
+                    <input type="hidden" name="UserID" id="UserID" class="form-control" ng-model="usr.UserID" readonly />
+                    <select class="form-control" ng-model="usr.UserID">
+                        <option ng-repeat="u in vm.Users | orderBy: 'FirstName'" ng-value="u.ID" ng-selected="usr.UserID == u.ID"> {{u.FirstName + ' ' + u.LastName}} </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="hidden" name="ProjectID" id="ProjectID" class="form-control" ng-model="usr.ProjectID" readonly />
+                    <select class="form-control" ng-model="usr.ProjectID">
+                        <option ng-repeat="p in vm.Projects" ng-value="p.ID" ng-selected="usr.ProjectID == p.ID"> {{p.Name}} </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="hidden" name="SecurityRoleID" id="SecurityRoleID" class="form-control" ng-model="usr.SecurityRoleID" readonly />
+                    <select class="form-control" ng-model="usr.SecurityRoleID">
+                        <option ng-repeat="sr in vm.SecurityRoles" ng-value="sr.ID" ng-selected="usr.SecurityRoleID == sr.ID"> {{sr.Name}} </option>
+                    </select>
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeProjectUser($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="4">
+                    <button type="button" class="btn btn-link" ng-click="vm.addProjectUsers()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

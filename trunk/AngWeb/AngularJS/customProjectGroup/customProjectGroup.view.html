@@ -1,0 +1,41 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-book">&nbsp;</span>Custom Project Group</p>
+    <label for="customGroup">Custom Group</label>
+    <select name="CustomGroupID" id="CustomGroupID" ng-model="CustomGroupID" ng-change="vm.customGroupSelectionChanged(CustomGroupID)">
+        <option ng-repeat="cg in vm.CustomGroups" value="{{cg.ID}}">{{cg.Name}} </option>
+    </select>
+    <br />
+    <label for="ProjectGroup">Project Group</label>
+    <select  name="ProjectGroupID" id="ProjectGroupID" ng-model="ProjectGroupID" ng-change="vm.projectGroupIdSelectionChanged(ProjectGroupID)">
+        <option ng-repeat="pg in vm.ProjectGroups" value="{{pg.ID}}"> {{pg.Name}} </option>
+    </select>
+    <br />
+    <form name="form" ng-submit="vm.saveCustomProjectGroups()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed" style="width:40%;">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Project</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+            <tr ng-repeat="cpg in vm.CustomProjectGroups">
+                 <td>
+                    <input type="hidden" name="ProjectID" id="ProjectID" class="form-control" ng-model="cpg.ProjectID" readonly />
+                    <select name="ProjectID" id="ProjectID" ng-model="cpg.ProjectID">
+                        <option ng-repeat="p in vm.Projects | orderBy: 'Name'" ng-value="p.ID" ng-selected="cpg.ProjectID == p.ID"> {{p.Name}} </option>
+                    </select>
+                </td>
+              
+              
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeCustomProjectGroup($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="4">
+                    <button type="button" class="btn btn-link" ng-click="vm.addCustomProjectGroups()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

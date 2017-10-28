@@ -1,0 +1,106 @@
+﻿<h3>Plan Detail - Expense </h3>
+
+<div class="col-lg-12 btn-group" role="group" aria-label="...">
+    <button ng-repeat='option in vm.PlanDetails' class="btn btn-primary" ng-click="vm.planDetailSelectionChanged($event)" value="{{option.ID}}">{{option.Year}}</button>
+</div>
+
+<br />
+
+<label for="project">Project</label>
+
+<select name="project" id="project" ng-model="projectID" ng-change="vm.projectSelectionChanged(projectID)">
+    <option ng-repeat="option in vm.Projects" value="{{option.ID}}">{{option.Name}}</option>
+</select>
+
+<br />
+
+<label for="expenseType">Expense Type</label>
+
+<select name="expenseType" id="expenseType" ng-model="expenseTypeID" ng-change="vm.expenseTypeSelectionChanged(expenseTypeID)">
+    <option ng-repeat="option in vm.ExpenseTypes" value="{{option.ID}}">{{option.Name}}</option>
+</select>
+
+<br />
+
+
+<form name="form" ng-submit="vm.savePlanDetailExpenses()" role="form">
+
+    <table class="table table-striped table-bordered table-condensed">
+        <tr>
+            <th style="background-color: #07889B; color:white;">ID</th>
+            <th style="background-color: #07889B; color:white;">Expense</th>
+
+            <th style="background-color: #07889B; color:white;">Jan</th>
+            <th style="background-color: #07889B; color:white;">Feb</th>
+            <th style="background-color: #07889B; color:white;">Mar</th>
+            <th style="background-color: #07889B; color:white;">Apr</th>
+
+            <th style="background-color: #07889B; color:white;">May</th>
+            <th style="background-color: #07889B; color:white;">Jun</th>
+            <th style="background-color: #07889B; color:white;">Jul</th>
+            <th style="background-color: #07889B; color:white;">Aug</th>
+
+            <th style="background-color: #07889B; color:white;">Sep</th>
+            <th style="background-color: #07889B; color:white;">Oct</th>
+            <th style="background-color: #07889B; color:white;">Nov</th>
+            <th style="background-color: #07889B; color:white;">Dec</th>
+
+            <th style="background-color: #07889B; color:white;">Delete</th>
+        </tr>
+
+        <tr ng-repeat="x in vm.PlanDetailExpenses">
+            <td>
+                <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.ID" readonly />
+            </td>
+            <td>
+                <select name="expenseByType" id="expenseByType" class="form-control" ng-model="x.ExpenseByTypeID">
+                    <option ng-repeat="option in vm.ExpenseByTypesList" ng-selected="x.ExpenseByTypeID==option.ID" ng-value="option.ID">{{option.Name}}</option>
+                </select>
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month1" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month2" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month3" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month4" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month5" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month6" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month7" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month8" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month9" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month10" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month11" required />
+            </td>
+            <td>
+                <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month12" required />
+            </td>
+            <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removePlanDetailExpense($index)" value="Delete" /></td>
+        </tr>
+        <tr class="form-actions">
+            <td colspan="2">
+                <button type="button" class="btn btn-link" ng-click="vm.addPlanDetailExpense()">Add Row</button>
+                <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+            </td>
+        </tr>
+    </table>
+</form>

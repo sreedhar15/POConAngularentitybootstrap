@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AngWeb", "AngWeb\AngWeb.csproj", "{D68715CB-B6BA-4F08-88AB-1E22CABCC75B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRPBookDomain", "LRPBookDomain\LRPBookDomain.csproj", "{8C84A033-1009-42FE-B232-059C14912222}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRPBookLibrary", "LRPBookLibrary\LRPBookLibrary.csproj", "{46079FA6-8AB1-4C71-A34F-0FB26702C681}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRPBookTypes", "LRPBookTypes\LRPBookTypes.csproj", "{1BDFD03F-2FD3-4041-927A-D94AB2D98C81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D68715CB-B6BA-4F08-88AB-1E22CABCC75B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D68715CB-B6BA-4F08-88AB-1E22CABCC75B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D68715CB-B6BA-4F08-88AB-1E22CABCC75B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D68715CB-B6BA-4F08-88AB-1E22CABCC75B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C84A033-1009-42FE-B232-059C14912222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C84A033-1009-42FE-B232-059C14912222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C84A033-1009-42FE-B232-059C14912222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C84A033-1009-42FE-B232-059C14912222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46079FA6-8AB1-4C71-A34F-0FB26702C681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46079FA6-8AB1-4C71-A34F-0FB26702C681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46079FA6-8AB1-4C71-A34F-0FB26702C681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46079FA6-8AB1-4C71-A34F-0FB26702C681}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BDFD03F-2FD3-4041-927A-D94AB2D98C81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BDFD03F-2FD3-4041-927A-D94AB2D98C81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BDFD03F-2FD3-4041-927A-D94AB2D98C81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BDFD03F-2FD3-4041-927A-D94AB2D98C81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

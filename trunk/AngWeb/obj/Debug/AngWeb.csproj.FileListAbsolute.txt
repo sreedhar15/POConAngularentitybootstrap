@@ -1,0 +1,113 @@
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\csc.exe
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\vbc.exe
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\VBCSCompiler.exe
+C:\WorkArea\LRP\trunk\AngWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\WorkArea\LRP\trunk\AngWeb\bin\AngWeb.dll.config
+C:\WorkArea\LRP\trunk\AngWeb\bin\AngWeb.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\AngWeb.pdb
+C:\WorkArea\LRP\trunk\AngWeb\bin\Antlr3.Runtime.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\EntityFramework.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\EntityFramework.SqlServer.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookDomain.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookLibrary.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookTypes.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\Newtonsoft.Json.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Net.Http.Formatting.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Helpers.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Http.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Http.WebHost.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Mvc.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Optimization.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Razor.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.Deployment.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.Razor.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\WebGrease.dll
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookDomain.pdb
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookLibrary.pdb
+C:\WorkArea\LRP\trunk\AngWeb\bin\LRPBookTypes.pdb
+C:\WorkArea\LRP\trunk\AngWeb\bin\EntityFramework.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\EntityFramework.SqlServer.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\Newtonsoft.Json.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Net.Http.Formatting.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Helpers.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Http.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Http.WebHost.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Mvc.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Optimization.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.Razor.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.Deployment.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\System.Web.WebPages.Razor.xml
+C:\WorkArea\LRP\trunk\AngWeb\bin\Antlr3.Runtime.pdb
+C:\WorkArea\LRP\trunk\AngWeb\obj\Debug\AngWeb.csprojResolveAssemblyReference.cache
+C:\WorkArea\LRP\trunk\AngWeb\obj\Debug\AngWeb.dll
+C:\WorkArea\LRP\trunk\AngWeb\obj\Debug\AngWeb.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\csc.exe
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\vbc.exe
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\VBCSCompiler.exe
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\AngWeb.dll.config
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\AngWeb.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\AngWeb.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Antlr3.Runtime.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\EntityFramework.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\EntityFramework.SqlServer.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookDomain.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookLibrary.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookTypes.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Microsoft.Web.Infrastructure.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Newtonsoft.Json.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Net.Http.Formatting.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Helpers.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Http.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Http.WebHost.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Mvc.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Optimization.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Razor.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.Deployment.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.Razor.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\WebGrease.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookDomain.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookDomain.dll.config
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookLibrary.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\LRPBookTypes.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\EntityFramework.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\EntityFramework.SqlServer.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Newtonsoft.Json.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Net.Http.Formatting.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Helpers.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Http.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Http.WebHost.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Mvc.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Optimization.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.Razor.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.Deployment.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\System.Web.WebPages.Razor.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\bin\Antlr3.Runtime.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\obj\Debug\AngWeb.csprojResolveAssemblyReference.cache
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\obj\Debug\AngWeb.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\AngWeb\obj\Debug\AngWeb.pdb

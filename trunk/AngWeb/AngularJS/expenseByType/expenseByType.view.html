@@ -1,0 +1,41 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-usd">&nbsp;</span>Expense By Type</p>
+
+
+    <label for="expenseType">Expense Type</label>
+
+    <select name="expenseType" id="expenseType" ng-model="expenseTypeID" ng-change="vm.expenseTypeSelectionChanged(expenseTypeID)">
+        <option ng-repeat="option in vm.ExpenseTypes" value="{{option.ID}}">{{option.Name}}</option>
+    </select>
+
+    <br />
+
+    <form name="form" ng-submit="vm.saveExpenseByTypes()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed" style="width:40%;">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Expense</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.ExpenseByTypes">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <!-- <input type="text" name="ExpenseID" id="ExpenseID" class="form-control" ng-model="x.ExpenseID" required /> -->
+                    <select name="expense" id="expense" ng-model="x.ExpenseID">
+                        <option ng-repeat="option in vm.Expenses" ng-selected="x.ExpenseID==option.ID" ng-value="option.ID">{{option.Name}}</option>
+                    </select>
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeExpenseByType($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="2">
+                    <button type="button" class="btn btn-link" ng-click="vm.addExpenseByType()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

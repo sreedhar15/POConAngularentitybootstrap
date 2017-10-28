@@ -1,0 +1,28 @@
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.dll.config
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.pdb
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.SqlServer.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookLibrary.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookTypes.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookLibrary.pdb
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookTypes.pdb
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.xml
+C:\WorkArea\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.SqlServer.xml
+C:\WorkArea\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.csprojResolveAssemblyReference.cache
+C:\WorkArea\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.dll
+C:\WorkArea\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.dll.config
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookDomain.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookLibrary.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookTypes.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookLibrary.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\LRPBookTypes.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.csprojResolveAssemblyReference.cache
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookDomain\obj\Debug\LRPBookDomain.pdb

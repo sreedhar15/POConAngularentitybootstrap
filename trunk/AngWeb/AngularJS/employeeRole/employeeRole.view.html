@@ -1,0 +1,42 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-user">&nbsp;</span>Employee Role</p>
+
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('A,B,C,D')">A-D</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('E,F,G,H')">E-H</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('I,J,K,L')">I-L</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('M,N,O,P')">M-P</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('Q,R,S,T')">Q-T</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('U,V,W,X')">U-X</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getEmployeeRolesByFilter('Y,Z')">Y-Z</button>
+    </div>
+
+    <br />
+
+
+    <form name="form" ng-submit="vm.saveEmployeeRoles()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Employee Role</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.EmployeeRoles">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <input type="text" name="Name" id="Name" class="form-control" ng-model="x.Name" required />
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeEmployeeRole($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="2">
+                    <button type="button" class="btn btn-link" ng-click="vm.addEmployeeRole()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

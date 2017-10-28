@@ -1,0 +1,9 @@
+C:\WorkArea\LRP\trunk\LRPBookTypes\bin\Debug\LRPBookTypes.dll
+C:\WorkArea\LRP\trunk\LRPBookTypes\bin\Debug\LRPBookTypes.pdb
+C:\WorkArea\LRP\trunk\LRPBookTypes\obj\Debug\LRPBookTypes.dll
+C:\WorkArea\LRP\trunk\LRPBookTypes\obj\Debug\LRPBookTypes.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookTypes\bin\Debug\LRPBookTypes.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookTypes\bin\Debug\LRPBookTypes.pdb
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookTypes\obj\Debug\LRPBookTypes.csprojResolveAssemblyReference.cache
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookTypes\obj\Debug\LRPBookTypes.dll
+C:\Sree - kingston Thumbdrive data\Abbott Projects\LRP\trunk\LRPBookTypes\obj\Debug\LRPBookTypes.pdb

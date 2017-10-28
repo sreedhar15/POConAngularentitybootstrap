@@ -1,0 +1,30 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-usd">&nbsp;</span>Expense Type</p>
+
+
+    <form name="form" ng-submit="vm.saveExpenseTypes()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Expense Type</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.ExpenseTypes">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <input type="text" name="Name" id="Name" class="form-control" ng-model="x.Name" required />
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeExpenseType($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="2">
+                    <button type="button" class="btn btn-link" ng-click="vm.addExpenseType()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

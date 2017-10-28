@@ -1,0 +1,37 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-book">&nbsp;</span>Scenario</p>
+
+    <form name="form" ng-submit="vm.savePlans()" role="form">
+
+        <table class="table table-striped table-bordered table-condensed" style="width:45%;">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Scenario Name</th>
+                <th style="background-color: #07889B; color:white;">Scenario Group Name</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.plans">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <input type="text" name="Name" id="Name" class="form-control" ng-model="x.Name" required />
+                </td>
+                <td>
+                    <!--<input type="text" name="Name" id="Name" class="form-control" ng-model="x.PlanGroupID" required />-->
+
+                    <select name="planGroup" id="planGroup" ng-model="x.PlanGroupID">
+                        <option ng-repeat="option in vm.planGroups" ng-selected="option.ID == x.PlanGroupID" ng-value="option.ID">{{option.Name}}</option>
+                    </select>
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removePlan($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="3">
+                    <button type="button" class="btn btn-link" ng-click="vm.addPlan()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>

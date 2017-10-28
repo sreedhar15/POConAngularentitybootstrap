@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title>Abbott R&amp;D Long Range Planning</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Content/bootstrap/css/bootstrap.min.css">
+    <link href="Content/bootstrap/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="Content/application/index.css" type="text/css" rel="stylesheet" />
+    <link id="linkApiRoot" href="" />
+  
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">LRP <span class="glyphicon glyphicon-binoculars"></span></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="portFolio.html">HOME</a></li>
+                    <li><a href="portFolio.html">ABOUT</a></li>
+                    <li><a href="portFolio.html">SERVICES</a></li>
+                    <li><a href="portFolio.html">PORTFOLIO</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>LOGIN</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="subnavbar">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <!-- Dropdown menu -->
+                <li>
+                    <a href="#!/menu" id="text"><span>Admin Menu</span></a>
+                </li>
+
+                <li ng-show="$root.globals.currentUser.userRoles.indexOf(2) >= 0" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Employee Role<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#!/employeeRoleType">Employee Role Type</a></li>
+                        <li><a href="#!/employeeRoleByType">Employee Role By Type</a></li>
+                        <li><a href="#!/employeeRole">Employee Role</a></li>
+                    </ul>
+                </li>
+                <li ng-show="$root.globals.currentUser.userRoles.indexOf(2) >= 0" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Expense<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#!/expenseType">Expense Type</a></li>
+                        <li><a href="#!/expenseByType">Expense By Type</a></li>
+                        <li><a href="#!/expense">Expense</a></li>
+                    </ul>
+                </li>
+                <li ng-show="$root.globals.currentUser.userRoles.indexOf(2) >= 0" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Scenario/Project<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#!/planGroup">Scenario Group</a></li>
+                        <li><a href="#!/plan">Scenario</a></li>
+                        <li><a href="#!/projectGroup">Project Group</a></li>
+                        <li><a href="#!/project">Project</a></li>
+                        <li><a href="#!/customGroup">Custom Group</a></li>
+                        <li><a href="#!/customProjectGroup">Custom Project Group</a></li>
+                    </ul>
+                </li>
+                <li ng-show="$root.globals.currentUser.userRoles.indexOf(2) >= 0" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Misc.<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#!/dvp">DVP</a></li>
+                        <li><a href="#!/currency">Currency</a></li>
+                        <li><a href="#!/country">Country</a></li>
+                        <li><a href="#!/costCenter">Cost Center</a></li>
+                        <li><a href="#!/franchise">Franchise</a></li>
+                        <li><a href="#!/plline">PL line</a></li>
+                    </ul>
+                </li>
+                <li ng-show="$root.globals.currentUser.userRoles.indexOf(1) >= 0" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="text">Access<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#!/userSecurityRole">Grant / Revoke Access</a></li>
+                        <li><a href="#!/user">User</a></li>
+                        <li><a href="#!/projectUser">Project Users</a></li>
+                        <li><a href="#!/projectGroupUser">Project Group Users</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+
+    <div id="main">
+        <div class="container" style="color: silver;">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+            </div>
+        </div>
+        <div class="container" style="color: silver;">
+            <div ng-view></div>
+        </div>
+    </div>
+
+    <!-- jQuery and Bootstrap -->
+
+    <!-- jQuery and Bootstrap -->
+
+    <script src="Scripts/jquery/jquery.min.js"></script>
+    <script src="Content/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Angular -->
+    <script src="Scripts/angular/angular.js"></script>
+    <script src="Scripts/angular/angular-route.js"></script>
+    <script src="Scripts/angular/angular-cookies.js"></script>
+    <script src="Scripts/angular/angular-cookies.js"></script>
+
+    <!-- Application Code -->
+    <script src="AngularJS/app.js"></script>
+
+    <!-- Angular Services -->
+
+    <script src="AngularJS/app-services/authentication.service.js"></script>
+    <script src="AngularJS/app-services/flash.service.js"></script>
+    <script src="AngularJS/app-services/project.service.js"></script>
+    <script src="AngularJS/app-services/projectGroup.service.js"></script>
+    <script src="AngularJS/app-services/plan.service.js"></script>
+    <script src="AngularJS/app-services/planGroup.service.js"></script>
+
+    <script src="AngularJS/app-services/employeeRoleType.service.js"></script>
+    <script src="AngularJS/app-services/employeeRoleByType.service.js"></script>
+    <script src="AngularJS/app-services/employeeRole.service.js"></script>
+
+    <script src="AngularJS/app-services/expenseType.service.js"></script>
+    <script src="AngularJS/app-services/expenseByType.service.js"></script>
+    <script src="AngularJS/app-services/expense.service.js"></script>
+
+    <script src="AngularJS/app-services/dvp.service.js"></script>
+    <script src="AngularJS/app-services/country.service.js"></script>
+    <script src="AngularJS/app-services/costcenter.service.js"></script>
+    <script src="AngularJS/app-services/currency.service.js"></script>
+    
+    <script src="AngularJS/app-services/planDetail.service.js"></script>
+    <script src="AngularJS/app-services/planDetailHeadCount.service.js"></script>
+    <script src="AngularJS/app-services/planDetailExpense.service.js"></script>
+    <script src="AngularJS/app-services/user.service.js"></script>
+    <script src="AngularJS/app-services/franchise.service.js"></script>
+    <script src="AngularJS/app-services/plline.service.js"></script>
+    <script src="AngularJS/app-services/userSecurityRole.service.js"></script>
+    <script src="AngularJS/app-services/customGroup.service.js"></script>
+    <script src="AngularJS/app-services/menu.service.js"></script>
+
+    <script src="AngularJS/app-services/customProjectGroup.service.js"></script>
+    <script src="AngularJS/app-services/projectGroupUser.service.js"></script>
+    <script src="AngularJS/app-services/projectUser.service.js"></script>
+
+    <!-- Angular Controllers -->
+
+    <script src="AngularJS/login/login.controller.js"></script>
+    <script src="AngularJS/project/project.controller.js"></script>
+    <script src="AngularJS/projectGroup/projectGroup.controller.js"></script>
+    <script src="AngularJS/plan/plan.controller.js"></script>
+    <script src="AngularJS/planGroup/planGroup.controller.js"></script>
+
+    <script src="AngularJS/employeeRoleType/employeeRoleType.controller.js"></script>
+    <script src="AngularJS/employeeRoleByType/employeeRoleByType.controller.js"></script>
+    <script src="AngularJS/employeeRole/employeeRole.controller.js"></script>
+
+    <script src="AngularJS/expenseType/expenseType.controller.js"></script>
+    <script src="AngularJS/expenseByType/expenseByType.controller.js"></script>
+    <script src="AngularJS/expense/expense.controller.js"></script>
+
+    <script src="AngularJS/dvp/dvp.controller.js"></script>
+    <script src="AngularJS/country/country.controller.js"></script>
+	 <script src="AngularJS/costCenter/costCenter.controller.js"></script>
+    <script src="AngularJS/currency/currency.controller.js"></script>
+
+    <script src="AngularJS/planDetailHeadCount/planDetailHeadCount.controller.js"></script>
+    <script src="AngularJS/planDetailExpense/planDetailExpense.controller.js"></script>
+    <script src="AngularJS/userSecurityRole/userSecurityRole.controller.js"></script>
+    <script src="AngularJS/projectGroupUser/projectGroupUser.controller.js"></script>
+    <script src="AngularJS/projectUser/projectUser.controller.js"></script>
+    <script src="AngularJS/user/user.controller.js"></script>
+    <script src="AngularJS/franchise/franchise.controller.js"></script>
+    <script src="AngularJS/plline/plline.controller.js"></script>
+    <script src="AngularJS/customGroup/customGroup.controller.js"></script>
+    <script src="AngularJS/menu/menu.controller.js"></script>
+    <script src="AngularJS/customProjectGroup/customProjectGroup.controller.js"></script>
+    
+    <script>
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown();
+    });
+
+    
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+﻿<h3>Plan Detail - Head Count</h3>
+
+    <div class="col-lg-12 btn-group" role="group" aria-label="...">
+        <button ng-repeat='option in vm.PlanDetails' class="btn btn-primary" ng-click="vm.planDetailSelectionChanged($event)" value="{{option.ID}}">{{option.Year}}</button>
+    </div>
+
+    <br />
+
+    <label for="project">Project</label>
+
+    <select name="project" id="project" ng-model="projectID" ng-change="vm.projectSelectionChanged(projectID)">
+        <option ng-repeat="option in vm.Projects" value="{{option.ID}}">{{option.Name}}</option>
+    </select>
+
+    <br />
+
+    <label for="employeeRoleType">Employee Role Type</label>
+
+    <select name="employeeRoleType" id="employeeRoleType" ng-model="employeeRoleTypeID" ng-change="vm.employeeRoleTypeSelectionChanged(employeeRoleTypeID)">
+        <option ng-repeat="option in vm.EmployeeRoleTypes" value="{{option.ID}}">{{option.Name}}</option>
+    </select>
+
+    <br />
+
+
+    <form name="form" ng-submit="vm.savePlanDetailHeadCounts()" role="form">
+
+        <table class="table table-inverse table-striped table-bordered table-condensed">
+            <tr>
+                <th>ID</th>
+                <th>Employee&nbsp;Role</th>
+                <th>DVP</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+
+                <th>Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.PlanDetailHeadCounts">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.ID" readonly />
+                </td>
+                <td>
+                    <select name="employeeRoleByType" id="employeeRoleByType" class="form-control" ng-model="x.EmployeeRoleByTypeID">
+                        <option ng-repeat="option in vm.EmployeeRoleByTypesList" ng-selected="x.EmployeeRoleByTypeID==option.ID" ng-value="option.ID">{{option.Name}}</option>
+                    </select>
+                </td>
+                <td>
+                    <input type="text" name="dvpID" id="dvpID" class="form-control" ng-model="x.DVPID" required />
+                </td>
+                <td>
+                    <input type="text" name="month1" id="month1" class="form-control" ng-model="x.Month1" required />
+                </td>
+                <td>h
+                    <input type="text" name="month2" id="month2" class="form-control" ng-model="x.Month2" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month3" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month4" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month5" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month6" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month7" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month8" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month9" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month10" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month11" required />
+                </td>
+                <td>
+                    <input type="text" name="ID" id="Name" class="form-control" ng-model="x.Month12" required />
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removePlanDetailHeadCount($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="2">
+                    <button type="button" class="btn btn-link" ng-click="vm.addPlanDetailHeadCount()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>

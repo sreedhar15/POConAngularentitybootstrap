@@ -1,0 +1,65 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-user">&nbsp;</span>Users</p>
+
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('A,B,C,D')">A-D</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('E,F,G,H')">E-H</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('I,J,K,L')">I-L</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('M,N,O,P')">M-P</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('Q,R,S,T')">Q-T</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('U,V,W,X')">U-X</button>
+        <button type="button" class="btn btn-default" ng-click="vm.getUsersByFilter('Y,Z')">Y-Z</button>
+    </div>
+    
+    <form name="form" ng-submit="vm.saveUserDetails()" role="form">
+        <table id="UserTable"
+               class="table table-condensed table-bordered table-striped table-hover">
+            <thead>
+                <tr>
+                    <th style="background-color: #07889B; color:white;">Login Name</th>
+                    <th style="background-color: #07889B; color:white;">First Name</th>
+                    <th style="background-color: #07889B; color:white;">Last Name</th>
+                    <th style="background-color: #07889B; color:white;">EmailId</th>
+                    <th style="background-color: #07889B; color:white;">Phone</th>
+                    <th style="background-color: #07889B; color:white;">Delete</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr ng-repeat="user in vm.user">
+
+                    <td>
+                        <input type="hidden" name="ID" id="ID" class="form-control" ng-model="user.ID" readonly />
+                        <input type="text" name="loginName" id="loginName" class="form-control" ng-model="user.LoginName" required />
+                    </td>
+                    <td>
+                
+                                <input type="text" name="firstName" id="firstName" class="form-control" ng-model="user.FirstName" required />
+                    </td>
+                    <td>
+                        <input type="text" name="lastName" id="lastName" class="form-control" ng-model="user.LastName" required />
+                    </td>
+
+                    <td>
+                        <input type="text" name="emailId" id="emailId" class="form-control" ng-model="user.EmailID" />
+                    </td>
+                    <td>
+                        <input type="text" name="phone" id="phone" class="form-control" ng-model="user.Phone" />
+                    </td>
+
+                    <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeUser($index)" value="Delete" /></td>
+                </tr>
+                <tr class="form-actions">
+                    <td colspan="6">
+                        <button type="button" class="btn btn-link" ng-click="vm.addUserDetails()">Add Row</button>
+                        <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+</div>

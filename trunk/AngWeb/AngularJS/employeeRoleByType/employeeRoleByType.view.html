@@ -1,0 +1,42 @@
+﻿<div class="container">
+
+    <p><span class="glyphicon glyphicon-user">&nbsp;</span>Employee Role By Type</p>
+
+
+
+    <label for="employeeRoleType">Employee Role Type</label>
+
+    <select name="employeeRoleType" id="employeeRoleType" ng-model="employeeRoleTypeID" ng-change="vm.employeeRoleTypeSelectionChanged(employeeRoleTypeID)">
+        <option ng-repeat="option in vm.EmployeeRoleTypes" value="{{option.ID}}">{{option.Name}}</option>
+    </select>
+
+    <br />
+
+    <form name="form" ng-submit="vm.saveEmployeeRoleByTypes()" role="form">
+
+
+        <table class="table table-striped table-bordered table-condensed" style="width:40%;">
+            <tr>
+                <th style="background-color: #07889B; color:white;">Employee Role</th>
+                <th style="background-color: #07889B; color:white;">Delete</th>
+            </tr>
+
+            <tr ng-repeat="x in vm.EmployeeRoleByTypes">
+                <td>
+                    <input type="hidden" name="ID" id="ID" class="form-control" ng-model="x.ID" readonly />
+                    <select name="employeeRole" id="employeeRole" ng-model="x.EmployeeRoleID">
+                        <option ng-repeat="option in vm.EmployeeRoles" ng-selected="x.EmployeeRoleID==option.ID" ng-value="option.ID">{{option.Name}}</option>
+                    </select>
+                </td>
+                <td width="100px;"><input type="button" class="btn btn-link" data-ng-click="vm.removeEmployeeRoleByType($index)" value="Delete" /></td>
+            </tr>
+            <tr class="form-actions">
+                <td colspan="2">
+                    <button type="button" class="btn btn-link" ng-click="vm.addEmployeeRoleByType()">Add Row</button>
+                    <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-primary">Save</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</div>
